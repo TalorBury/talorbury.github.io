@@ -187,78 +187,6 @@
         (只是将文件添加到了暂存区)
 </code></pre>
 
-<h3 id="toc_3">4.将文件提交到仓库</h3>
-
-<pre><code>        git commit -m &quot;Commit Description&quot;
-</code></pre>
-
-<h3 id="toc_4">5.查看仓库状态</h3>
-
-<pre><code>        git status
-</code></pre>
-
-<h3 id="toc_5">6.查看文件的修改部分</h3>
-
-<pre><code>        git diff readme.txt
-</code></pre>
-
-<h3 id="toc_6">7.查看git历史记录</h3>
-
-<pre><code>        //--pretty=oneline 显示的是commit id 版本号
-        git log (--pretty=oneline)
-</code></pre>
-
-<h3 id="toc_7">8.回退到任意版本</h3>
-
-<pre><code>        //HEAD表示当前版本
-        git reset --hard HEAD~(n)
-        //输入commit id 前几位即可
-        git reset --hard commit id
-</code></pre>
-
-<h3 id="toc_8">9.查看git每一次的命令</h3>
-
-<pre><code>        //可以查到用于回退任意版本的commit id
-        git reflog
-</code></pre>
-
-<h3 id="toc_9">10.撤销修改</h3>
-
-<pre><code>        //丢弃工作区的修改
-        git checkout -- readme.txt
-        //把暂存的修改回退到工作区
-        git reset HEAD readme.txt
-</code></pre>
-
-<h3 id="toc_10">11.删除文件</h3>
-
-<pre><code>        //删除工作区的文件
-        rm readme.txt
-        //删除版本库中的文件
-        git rm readme.txt
-        //提交删除
-        git commit -m &quot;delete readme.txt&quot;
-        //用版本库里的版本替换工作区的版本
-        git checkout -- readme.txt
-</code></pre>
-
-<h3 id="toc_11">12.远程仓库</h3>
-
-<pre><code>    （1）创建SSH Key
-        ssh-keygen -t rsa -C &quot;Your email&quot;
-    （2）Add SSH Key
-        用户主目录中.ssh目录中有私匙id_rsa和公匙id_rsa.pub
-        .ssh目录是隐藏文件，使用ls -ah可以查看所有文件
-        远程的Key中填写id_rsa.pub文件中的内容
-    （3）在GitHub中创建Repository
-    （4）建立本地仓库与远程仓库的关联
-        git remote add origin https://github.com/UserName/Repository.git
-        (git remote rm origin  去除本地仓库与远程仓库的关联)
-    （5）将本地仓库的内容推送到远程库中
-        git push -u origin master
-    （6）将远程库克隆到本地
-        git clone https://github.com/UserName/Repository.git
-</code></pre>
 
                         
                       </div>
@@ -266,7 +194,7 @@
                 </a>
                 <div class="read-more clearfix">
                   <div class="more-left left">
-                  
+                   <a href="14570993893626.html">Read more</a>&nbsp;&nbsp; 
                     <span class="date">2016/3/4</span>
                     <span>posted in&nbsp;</span> 
           				  

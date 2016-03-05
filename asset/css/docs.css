@@ -1,3 +1,6 @@
+h1{
+  color: #5eb5be;
+}
 .move-right .exit-off-canvas{
 	box-shadow: none;
 	background-color: rgba(255,255,255,0.2);
